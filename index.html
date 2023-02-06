@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function openDirections() {
+                alert("kkk")
+            }
+        </script>
+        <style>
+            body {
+                background-color: #FCC2FC;
+                color: #B5F1CC;
+                margin: 0; 
+            }
+            .footer {
+                background-color: #C9F4AA;
+                color: white;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin: 0;
+            }
+
+            .names {
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            button {
+                border: none;
+                padding: 10px;
+                font-weight: bolder;
+            }
+
+            .names p {
+                text-align: center;
+                color: #B5F1CC;
+                font-size: x-large;
+                font-weight: bolder;
+                text-shadow:
+                    -1px -1px 0 #000,  
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000;
+                
+            }
+
+            .map {
+                border-radius: 25px;
+                width: 40vw;
+                height: 40vw;
+            }
+
+            .shadow {
+                box-shadow: 5px 10px 8px 10px #888888;
+            }
+
+            .textShadow {
+                text-shadow: 2px 2px 5px #888888;
+            }
+
+            .time {
+                background-color: #E5FDD1;
+                color: white;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 10vw;
+                padding-right: 10vw;
+                font-size: larger;
+                font-weight: bold;
+                text-shadow:
+                    -1px -1px 3px #000,  
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000;
+            }
+
+            .scroll {
+                animation: scroll 8s ease-in infinite;
+            }
+
+            .date {
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: x-large;
+            }
+
+            .invite {
+                text-shadow: none;
+                font-size: large;
+                text-shadow: 1px 1px 3px #000;
+            }
+
+            @keyframes scroll {
+                0%   { translate: 0 0}
+                20%   { translate: 0 0}
+                100% { translate: 0 -50%}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="names">
+            <div class="scroll">
+                <p>Mian Imdad Farid Wattoo</p>
+                <p>Mian Mustafa Iqbal Wattoo</p>
+                <p>.............</p>
+            </div>
+        </div>
+
+        <div class="time date">
+            <p class="invite">It will be our immense pleasure to have you with us at the Rukhsati cermony ✨</p>
+            <p>📅 Saturday, 12th February, 2023</p>
+        </div>
+        <div class="time">
+            <p>🕠 6:00 pm Arrival</p>
+            <p>🍽 7:00 pm Dinner</p>
+            <p>💖 9:00 pm Rukhsati</p>
+        </div>
+
+        <div class="footer">
+            <div>
+                <h2 class="textShadow">Al-Noor Marriage Hall</h2>
+                <h3>Men ♂</h3>
+                <iframe class="map shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.7445413665971!2d73.63935351118691!3d30.69089042002589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391804b84fc932b9%3A0x3976ef7984759bf1!2sAl-Noor%20Marriage%20Hall!5e0!3m2!1sen!2s!4v1675606288785!5m2!1sen!2s" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div>
+                <h2 class="textShadow">Riwaj Marquee</h2>
+                <h3>Women ♀</h3>
+                <iframe class="map shadow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d857.7445415445391!2d73.6393535!3d30.6908904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6af3ed2259b00213!2sRiwaj%20Marquee!5e0!3m2!1sen!2s!4v1675607446953!5m2!1sen!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </div>
+    </body>
+</html>
